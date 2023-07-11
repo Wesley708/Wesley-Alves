@@ -18,35 +18,36 @@ const sql = document.querySelector('.sql');
 
 let cont = 0;
 
+
 mudadisplay();
 
-setInterval(mudadisplay, 5000);
+setInterval(mudadisplay, 20000);
 
 function mudadisplay(){
 
     if (cont == 0) {
         fhtml()
        
-    } else if (cont == 1){
+    } else if (cont == 2){
         fcss()
        
-    } else if (cont == 2){
+    } else if (cont == 4){
         fjs()
         
-    }else if (cont == 3){
+    }else if (cont == 1){
         fphp()
        
-    }  else if (cont == 4){
+    }  else if (cont == 3){
         fjava()
        
-    } else if (cont == 5){
-        fwp()
-        
     } else if (cont == 6){
+        fsql()
+        
+    } else if (cont == 5){
         freact()
         
     } else {
-        fsql()
+        fwp()
     
     }
 
@@ -86,7 +87,7 @@ css.addEventListener("click", function(e) {
 
 function fcss(){
 
-    cont = 2;
+    cont = 3;
 
     html.style.fill = "rgb(44, 44, 44)";
     css.style.fill = "rgb(0, 132, 255)";
@@ -111,7 +112,7 @@ js.addEventListener("click", function(e) {
 
 function fjs(){
 
-    cont = 3;
+    cont = 5;
 
     html.style.fill = "rgb(44, 44, 44)";
     css.style.fill = "rgb(44, 44, 44)";
@@ -137,7 +138,7 @@ php.addEventListener("click", function(e) {
 
 function fphp(){
 
-    cont = 4;
+    cont =2;
 
     html.style.fill = "rgb(44, 44, 44)";
     css.style.fill = "rgb(44, 44, 44)";
@@ -162,7 +163,7 @@ java.addEventListener("click", function(e) {
 
 function fjava(){
 
-    cont = 5;
+    cont = 4;
 
     html.style.fill = "rgb(44, 44, 44)";
     css.style.fill = "rgb(44, 44, 44)";
@@ -187,7 +188,7 @@ wp.addEventListener("click", function(e) {
 
 function fwp(){
 
-    cont = 6;
+    cont = 0;
 
     html.style.fill = "rgb(44, 44, 44)";
     css.style.fill = "rgb(44, 44, 44)";
@@ -212,7 +213,7 @@ react.addEventListener("click", function(e) {
 
 function freact(){
 
-    cont = 7;
+    cont = 6;
 
     html.style.fill = "rgb(44, 44, 44)";
     css.style.fill = "rgb(44, 44, 44)";
@@ -223,7 +224,7 @@ function freact(){
     react.style.fill = "rgb(0, 174, 255)";
     sql.style.fill = "rgb(44, 44, 44)";
 
-    return display.innerHTML = "<h2>React</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ab cupiditate nostrum qui ratione quod necessitatibus sit, reiciendis cum tempore sed repellat odio, dicta aliquam dignissimos, natus amet soluta dolor!</p>";
+    return display.innerHTML = "<h2>React</h2><p>Entrei em </p>";
 
 }
 
@@ -238,7 +239,7 @@ sql.addEventListener("click", function(e) {
 
 function fsql(){
 
-    cont = 0;
+    cont = 7;
 
     html.style.fill = "rgb(44, 44, 44)";
     css.style.fill = "rgb(44, 44, 44)";
@@ -249,6 +250,6 @@ function fsql(){
     react.style.fill = "rgb(44, 44, 44)";
     sql.style.fill = "rgb(221, 77, 25)";
 
-    return display.innerHTML = "<h2>Sql</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ea rem minus, magnam animi, minima voluptatibus sit perferendis eius dolorum fuga, possimus consequuntur quibusdam provident repellat esse? Magnam, deserunt laboriosam.</p>";
+    return display.innerHTML = "<h2>Sql</h2><p>Já tive contato com essa tecnologia em três matérias diferentes na faculdade, em Modelagem de Banco de Dados, Banco de Dados Relacional e na matéria de Desenvolvimento Web onde utilizei o Sql para fazer um sistema de gestão escolar. </p>";
 
 };

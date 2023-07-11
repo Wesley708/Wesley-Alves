@@ -46,11 +46,11 @@
     text-decoration: none;
     padding: 5px 20px;
     border-radius: 20px;
+    transition: 0.5s;
 }a:hover{
     position:relative;
     top:0;
     top:-4px;
-    transition: 0.3s;
 }#liMenu{
     display: flex;
     justify-content: space-between;
@@ -131,42 +131,23 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+}.container_svg2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
 }.svg2{
     fill: rgb(44, 44, 44);
-    padding: 10px;
-    
-}.php:hover{
-    fill: rgb(32, 133, 192);
-    transition: 0.3s;
+    height: 2.5em;
+    transition: .5s;
+}.svg2:hover{
+    height: 4em;
 }.tecnologias{
     display: flex;
     width: 400px;
     margin:30px;
     flex-direction: row;
     justify-content: space-around;
-}.html:hover{
-    fill: rgb(255, 81, 0);
-    transition: 0.3s;
-}
-.css:hover{
-    fill: rgb(0, 132, 255);
-    transition: 0.3s;
-}
-.js:hover{
-    fill: rgb(236, 236, 50);
-    transition: 0.3s;
-}.java:hover{
-    fill: rgb(214, 27, 27);
-    transition: 0.3s;
-}.sql:hover{
-    fill: rgb(221, 77, 25);
-    transition: 0.3s;
-}.wp:hover{
-    fill: rgb(0, 81, 255);
-    transition: 0.3s;
-}.react:hover{
-    fill: rgb(0, 174, 255);
-    transition: 0.3s;
 }#conhecimentos{
     height: 200px;
 }
