@@ -120,7 +120,7 @@ function fjs(){
     php.style.fill = "rgb(44, 44, 44)";
     java.style.fill = "rgb(44, 44, 44)";
     wp.style.fill = "rgb(44, 44, 44)";
-    react.style.fill = "rgb(44, 44, 44)F";
+    react.style.fill = "rgb(44, 44, 44)";
     sql.style.fill = "rgb(44, 44, 44)";
     
     return display.innerHTML = "<h2>JavaScript</h2><p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus soluta a sed consequatur cumque sapiente, fugiat reprehenderit inventore quos alias quia voluptates dolor fuga veritatis accusantium? Officia in eaque sed</p>";
@@ -174,7 +174,7 @@ function fjava(){
     react.style.fill = "rgb(44, 44, 44)";
     sql.style.fill = "rgb(44, 44, 44)";
 
-    return display.innerHTML = "<h2>Java</h2><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo perspiciatis maxime nisi debitis. Iste incidunt aperiam consequatur maxime, eum labore reiciendis omnis perspiciatis exercitationem ex dolorum, a sit ea tenetur.</p>";
+    return display.innerHTML = "<h2>Java</h2><p>Usei essa linguagem na matéria de Técnicas de porgramação onde aprendi principalmete a o conceito de orientação a objeto, criação de classes, atributos e funções.</p>";
 
 };
 
@@ -224,7 +224,7 @@ function freact(){
     react.style.fill = "rgb(0, 174, 255)";
     sql.style.fill = "rgb(44, 44, 44)";
 
-    return display.innerHTML = "<h2>React</h2><p>Entrei em </p>";
+    return display.innerHTML = "<h2>React</h2><p>Entrei em contato com o React atravez de um curso extra currícular, ainda não desenvolvi um porjeto meu com essa biblioteca javaScript, mas em breve terei algo pra mostrar.</p>";
 
 }
 
