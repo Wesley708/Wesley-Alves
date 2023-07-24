@@ -50,7 +50,7 @@
     padding: 5px 20px;
     border-radius: 20px;
     transition: 0.5s;
-}a:hover{
+}ul a:hover{
     position:relative;
     top:0;
     top:-4px;
@@ -58,6 +58,8 @@
     display: flex;
     justify-content: space-between;
     padding-right: 0px;
+}.container img{
+    height: 400px;
 }.container{
     height: 100vh;
     width: 100%;
