@@ -79,7 +79,7 @@
     background-color: rgb(13, 56, 94, 0.212);
 }
 #tecnologias{
-    background-color: rgba(13, 56, 94, 0.212);
+    background-color: rgba(68, 89, 107, 0.212);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,8 +159,10 @@ h2{
     box-shadow: 0px 0px 3px rgba(58, 74, 129, 0.921);
     padding: 30px;
     text-align: justify;
+    background-color: rgb(13, 56, 94);
+    color: white;
 }#conhecimentos h2{
-    color:rgb(13, 56, 94);
+    color:white;
     font-weight: 600;
 }p{
     text-indent: 30px;
