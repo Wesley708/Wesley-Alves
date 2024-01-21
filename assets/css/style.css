@@ -73,13 +73,13 @@
 #home{
     background-color:rgb(250, 250, 250);
 }#sobre{
-    background-color: rgb(13, 56, 94, 0.212);
+    background-color: rgba(103, 103, 103, 0.212);
 }
 #tecnologias{
     background-color: rgb(13, 56, 94, 0.212);
 }
 #tecnologias{
-    background-color: rgba(68, 89, 107, 0.212);
+    background-color: rgba(103, 103, 103, 0.212);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,7 +124,9 @@ h2{
 
 }p{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 19px;
+    text-indent: 30px;
+    text-align: justify;
 }.padding{
     margin: 10vw;
     text-align:justify;
@@ -164,6 +166,21 @@ h2{
 }#conhecimentos h2{
     color:white;
     font-weight: 600;
-}p{
-    text-indent: 30px;
+}
+
+#foto-perfil{
+    border-radius: 50%;
+}.project-link{
+    color: rgb(58, 19, 135);
+    font-size: 19px;
+    font-weight: 500;
+}
+.project-link:hover{
+    color: rgb(28, 133, 172);
+}
+.p-project-link{
+    text-align: left !important;
+}
+#horta-img{
+    background-image: url('assets/img/Logo.png');
 }
