@@ -5,7 +5,7 @@
     vertical-align:baseline;
     list-style:none;
     border:0;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display', serif;
 }html{
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
@@ -15,7 +15,7 @@
     vertical-align:baseline;
     list-style:none;
     border:0;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Rad Hat Display', serif;
 }#fora{
     display: flex;
     width:100vw;
@@ -85,6 +85,20 @@
     justify-content: center;
     height: 700px;
 }
+.whatsapp{
+    height: 70px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    transition: .4s;
+}
+
+.whatsapp:hover{
+    right: 15px;
+    bottom: 15px;
+    height: 90px;
+}
+
 #rodape{
     display: flex;
     height: 170px;
@@ -124,7 +138,7 @@ h2{
 
 }p{
     font-weight: 400;
-    font-size: 19px;
+    font-size: 18px;
     text-indent: 30px;
     text-align: justify;
 }.padding{
@@ -183,4 +197,10 @@ h2{
 }
 #horta-img{
     background-image: url('assets/img/Logo.png');
+}
+
+@media screen and(max-width: 450px) {
+    #sobre p{
+        font-size: 10px;
+    }
 }

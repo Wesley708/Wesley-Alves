@@ -92,6 +92,13 @@
     background-color: rgb(13, 56, 94);
     justify-content: space-around;
 }
+
+.whatsapp img{
+   position: fixed;
+   right: 20px;
+   left: 20px;
+   background-color: black;
+}
 .rodape2{
     display: flex;
     flex-direction: column;
