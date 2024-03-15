@@ -16,6 +16,10 @@ const react = document.querySelector('.react');
 
 const sql = document.querySelector('.sql');
 
+const tecTitulo = document.querySelector('.tecnologia-titulo');
+
+const tecContent = document.querySelector('.tecnologia-content');
+
 let cont = 0;
 
 
@@ -74,7 +78,11 @@ function fhtml() {
     react.style.fill = "rgb(44, 44, 44)";
     sql.style.fill = "rgb(44, 44, 44)";
 
-    return display.innerHTML = "<h2>HTML5</h2><p>Aprendi com o curso do Guanabara, mais alguns lugares que eu vi, vi também em outros cursos e apliquei na maioria dos meus projetos e mais. </p>"; 
+    tecTitulo.innerHTML = '<h2>HTML5</h2>';
+
+    tecContent.innerHTML = "<p>Aprendi com o curso do Guanabara, mais alguns lugares que eu vi, vi também em outros cursos e apliquei na maioria dos meus projetos e mais. </p>"; 
+
+    
 };
 
 css.addEventListener("click", function(e) {
@@ -98,7 +106,11 @@ function fcss(){
     react.style.fill = "rgb(44, 44, 44)F";
     sql.style.fill = "rgb(44, 44, 44)";
 
-    return display.innerHTML = "<h2>CSS3</h2><p>Gosto muito de utilizar essa forma de estilização para web, é fácil usar as funções que a tecnologia tem para ter como resultado uma interface agradável e mais.</p>";
+    tecTitulo.innerHTML = `<h2>CSS3</h2>`;
+
+    tecContent.innerHTML = `<p>Gosto muito de utilizar essa forma de estilização para web, é fácil usar as funções que a tecnologia tem para ter como resultado uma interface agradável e mais.</p>`;
+
+   
 
 };
 
@@ -122,8 +134,11 @@ function fjs(){
     wp.style.fill = "rgb(44, 44, 44)";
     react.style.fill = "rgb(44, 44, 44)";
     sql.style.fill = "rgb(44, 44, 44)";
+
+    tecTitulo.innerHTML = `<h2>JavaScript</h2>`;
     
-    return display.innerHTML = "<h2>JavaScript</h2><p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus soluta a sed consequatur cumque sapiente, fugiat reprehenderit inventore quos alias quia voluptates dolor fuga veritatis accusantium? Officia in eaque sed</p>";
+    tecContent.innerHTML = `<p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus soluta a sed consequatur cumque sapiente, fugiat reprehenderit inventore quos alias quia voluptates dolor fuga veritatis accusantium? Officia in eaque sed</p>`;
+    
 
 };
 
@@ -149,7 +164,11 @@ function fphp(){
     react.style.fill = "rgb(44, 44, 44)";
     sql.style.fill = "rgb(44, 44, 44)";
 
-    return display.innerHTML = "<h2>php</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore sit explicabo, optio dolore ullam nostrum est reiciendis officia a veniam aperiam corrupti reprehenderit excepturi ratione quae, autem, quasi nisi.</p>";
+    tecTitulo.innerHTML = `<h2>php</h2>`;
+    
+    tecContent.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore sit explicabo, optio dolore ullam nostrum est reiciendis officia a veniam aperiam corrupti reprehenderit excepturi ratione quae, autem, quasi nisi.</p>`;
+
+
 
 };
 
@@ -174,7 +193,10 @@ function fjava(){
     react.style.fill = "rgb(44, 44, 44)";
     sql.style.fill = "rgb(44, 44, 44)";
 
-    return display.innerHTML = "<h2>Java</h2><p>Usei essa linguagem na matéria de Técnicas de porgramação onde aprendi principalmete a o conceito de orientação a objeto, criação de classes, atributos e funções.</p>";
+    tecTitulo.innerHTML = `<h2>Java</h2>`;
+    
+    tecContent.innerHTML = `<p>Usei essa linguagem na matéria de Técnicas de porgramação onde aprendi principalmete a o conceito de orientação a objeto, criação de classes, atributos e funções.</p>`;
+
 
 };
 
@@ -199,7 +221,10 @@ function fwp(){
     react.style.fill = "rgb(44, 44, 44)";
     sql.style.fill = "rgb(44, 44, 44)";
 
-    return display.innerHTML = "<h2>WordPress</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio assumenda, mollitia saepe iure neque totam unde tenetur soluta illo quis pariatur dignissimos nobis laborum blanditiis dicta tempore perferendis consequuntur laudantium.</p>";
+    tecTitulo.innerHTML = `<h2>WordPress</h2>`;
+    
+    tecContent.innerHTML = `<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio assumenda, mollitia saepe iure neque totam unde tenetur soluta illo quis pariatur dignissimos nobis laborum blanditiis dicta tempore perferendis consequuntur laudantium.</p>`;
+
 
 }
 
@@ -224,7 +249,10 @@ function freact(){
     react.style.fill = "rgb(0, 174, 255)";
     sql.style.fill = "rgb(44, 44, 44)";
 
-    return display.innerHTML = "<h2>React</h2><p>Entrei em contato com o React atravez de um curso extra currícular, ainda não desenvolvi um porjeto meu com essa biblioteca javaScript, mas em breve terei algo pra mostrar.</p>";
+    tecTitulo.innerHTML = `<h2>React</h2>`;
+    
+    tecContent.innerHTML = `<p>Entrei em contato com o React atravez de um curso extra currícular, ainda não desenvolvi um porjeto meu com essa biblioteca javaScript, mas em breve terei algo pra mostrar.</p>`;
+
 
 }
 
@@ -250,6 +278,8 @@ function fsql(){
     react.style.fill = "rgb(44, 44, 44)";
     sql.style.fill = "rgb(221, 77, 25)";
 
-    return display.innerHTML = "<h2>Sql</h2><p>Já tive contato com essa tecnologia em três matérias diferentes na faculdade, em Modelagem de Banco de Dados, Banco de Dados Relacional e na matéria de Desenvolvimento Web onde utilizei o Sql para fazer um sistema de gestão escolar. </p>";
+    tecTitulo.innerHTML = `<h2>Sql</h2>`;
+    
+    tecContent.innerHTML = `<p>Já tive contato com essa tecnologia em três matérias diferentes na faculdade, em Modelagem de Banco de Dados, Banco de Dados Relacional e na matéria de Desenvolvimento Web onde utilizei o Sql para fazer um sistema de gestão escolar. </p>`;
 
 };

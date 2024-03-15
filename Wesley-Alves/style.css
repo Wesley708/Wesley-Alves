@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     padding:0;
@@ -16,6 +17,10 @@
     list-style:none;
     border:0;
     font-family: 'Red Hat Display', sans-serif;
+}.logo h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: 100;
 }#fora{
     display: flex;
     width:100vw;

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+   :root{
+     --gradiente:#333;
+   } 
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+    body{
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 200;
+    background-color: #333;
+    color: #fff;
+    padding: 0px 20px;
+  }
+  
+  
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  main {
+    padding: 0px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .projects-conteiner{
+    display: flex;
+    justify-content: center;
+  }
+  .projects-box{
+    margin: 10px;
+    padding: 5px;
+    
+    width: 25%;
+    height: 500px;
+  }
+
+  .project-image{
+    background-image: url('../assets/img/nossa-horta.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    background-color: violet;
+    
+  }
+
+  .project-content{
+    width: 100%;
+    height: 50%;
+    background-color: #d2d2d2;
+    padding: 5px;
+  }
+  
+  .logo h1{
+    font-weight: 200;
+    font-size: 60px;
+  }
+  
+  .about-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e330d45;
+  }
+  .about-container{
+    width: 60vw;
+    height: 75vh;
+    background-image: url('../assets/img/foto-perfil.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    border-radius: 15px;
+    background-color: #333;
+    
+  }
+  .about-overlay{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), var(--gradiente), var(--gradiente), var(--gradiente), var(--gradiente));
+  }
+  .about-image{
+    border-radius: 10px;
+    background-color: #333;
+  }
+  .foto{
+    height: 100%;
+    width: 50%;
+}
+.about-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    height: 100%;
+    width: 50%;
+    color: whitesmoke;
+    padding-left:  30px;
+    padding-right: 20px;
+}
+.about-content p{
+  text-align: center;
+  margin: 5px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.about-content h2{
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+  font-weight: 200;
+}
+li p{
+  font-size: 30px;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+}
+.line{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform:translate(-50%);
+  width: 50%;
+  height: 2px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  position: relative;
+
+}
+.line-select{
+  position: absolute;
+  bottom: -6px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  /* box-shadow: 0px 0px 30px 3px #737373;  */
+}
+.line-select:hover{
+  cursor: pointer;
+}
+#select-um{ 
+  left: 20%;
+}
+#select-dois{
+  left: 40%;
+}
+#select-tres{
+  left: 60%;
+}
+#select-quatro{
+  left: 80%;
+}
+.selected{
+  border: 2px solid #fff;
+  background-color: #333;
+}
+.before{
+  left: -80px;
+}
+.after{
+  right: -80px;
+}
+.before, .after{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: rgba(23, 23, 23, 0.345);
+  position:absolute;
+  bottom: 50%;
+  font-weight: 400;
+  font-size: 30px;
+  transform: translate(-50% -50%);
+  transition: .3s;
+  color: whitesmoke;
+}
+.before:hover, .after:hover{
+  background-color: #100e0e97;
+  cursor: pointer;
+}
