@@ -21,7 +21,7 @@
     font-family: 'Rad Hat Display', serif;
 }.logo{
     font-family: "Raleway", sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     margin: 0;
     font-weight: 100;
   }#fora{
@@ -106,9 +106,9 @@
 }
 
 .whatsapp:hover{
-    right: 15px;
-    bottom: 15px;
-    height: 80px;
+    right: 20px;
+    bottom: 20px;
+    height: 70px;
 }
 
 #rodape{
@@ -290,7 +290,7 @@ h2{
   }
   .about-container{
     width: 60vw;
-    height: 75vh;
+    height: 70vh;
     background-image: url('../../assets/img/foto-perfil.jpg');
     background-repeat: no-repeat;
     background-position: left;

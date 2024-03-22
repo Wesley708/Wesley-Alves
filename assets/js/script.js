@@ -283,3 +283,48 @@ function fsql(){
     tecContent.innerHTML = `<p>Já tive contato com essa tecnologia em três matérias diferentes na faculdade, em Modelagem de Banco de Dados, Banco de Dados Relacional e na matéria de Desenvolvimento Web onde utilizei o Sql para fazer um sistema de gestão escolar. </p>`;
 
 };
+
+
+
+
+
+
+
+const select_um = document.querySelector('#select-um');
+
+const select_dois = document.querySelector('#select-dois');
+
+const select_tres = document.querySelector('#select-tres');
+
+const select_quatro = document.querySelector('#select-quatro');
+
+
+function about(selected){
+    switch(selected){
+        case 'um':
+            select_um.classList.add("selected");
+            select_dois.classList.remove("selected");
+            select_tres.classList.remove("selected");
+            select_quatro.classList.remove("selected");
+        break;
+        case 'dois':
+            select_dois.classList.add("selected");
+            select_um.classList.remove("selected");
+            select_tres.classList.remove("selected");
+            select_quatro.classList.remove("selected");
+        break;
+        case 'tres':
+            select_tres.classList.add("selected");
+            select_um.classList.remove("selected");
+            select_dois.classList.remove("selected");
+            select_quatro.classList.remove("selected");
+        break;
+        case 'quatro':
+            select_quatro.classList.add("selected");
+            select_um.classList.remove("selected");
+            select_dois.classList.remove("selected");
+            select_tres.classList.remove("selected");
+        break;
+    }
+
+}
