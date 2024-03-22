@@ -12,6 +12,7 @@
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
 }body{
+    max-width: 100vw;
     padding:0;
     margin:0;
     vertical-align:baseline;
@@ -31,10 +32,11 @@
     justify-content: center;
     background-color: rgb(37, 39, 59);
 }nav{
-    width: 100vw;
+    width: 100%;
     height: 100px;
     display: flex;
-    position: fixed;
+    position: sticky;
+    top: 0px;
     align-items: center;
     justify-content: space-around;
     background-color: #222;
@@ -252,3 +254,167 @@ h2{
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+    --gradiente:#333;
+  } 
+
+  .about-section{
+    height: calc(100vh - 100px) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e330d45;
+  }
+  .about-container{
+    width: 60vw;
+    height: 75vh;
+    background-image: url('../../assets/img/foto-perfil.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    border-radius: 15px;
+    background-color: #333;
+    
+  }
+  .about-overlay{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), var(--gradiente), var(--gradiente), var(--gradiente), var(--gradiente));
+  }
+  .about-image{
+    border-radius: 10px;
+    background-color: #333;
+  }
+  .foto{
+    height: 100%;
+    width: 50%;
+}
+.about-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    height: 100%;
+    width: 50%;
+    color: whitesmoke;
+    padding-left:  30px;
+    padding-right: 20px;
+}
+.about-content p{
+  text-align: center;
+  margin: 5px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.about-content h2{
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+  font-weight: 200;
+}
+
+.line{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform:translate(-50%);
+  width: 50%;
+  height: 2px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  position: relative;
+
+}
+.line-select{
+  position: absolute;
+  bottom: -6px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  
+}
+
+
+
+
+ .line-select:hover{
+  cursor: pointer;
+}
+#select-um{ 
+  left: 20%;
+}
+#select-dois{
+  left: 40%;
+}
+#select-tres{
+  left: 60%;
+}
+#select-quatro{
+  left: 80%;
+}
+.selected{
+  border: 2px solid #fff;
+  background-color: #333;
+}
+.before{
+  left: -80px;
+}
+.after{
+  right: -80px;
+}
+.before, .after{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: rgba(23, 23, 23, 0.345);
+  position:absolute;
+  bottom: 50%;
+  font-weight: 400;
+  font-size: 30px;
+  transform: translate(-50% -50%);
+  transition: .3s;
+  color: whitesmoke;
+}
+.before:hover, .after:hover{
+  background-color: #100e0e97;
+  cursor: pointer;
+}  
+
+/* abbr{
+    display: none;
+} */
