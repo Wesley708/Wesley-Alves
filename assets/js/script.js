@@ -298,6 +298,10 @@ const select_tres = document.querySelector('#select-tres');
 
 const select_quatro = document.querySelector('#select-quatro');
 
+const aboutContainer = document.querySelector('.about-container')
+
+const aboutContent = document.querySelector('.about-content')
+
 
 function about(selected){
     switch(selected){
@@ -306,24 +310,63 @@ function about(selected){
             select_dois.classList.remove("selected");
             select_tres.classList.remove("selected");
             select_quatro.classList.remove("selected");
+
+            aboutContainer.classList.add("about-img-um");
+            aboutContainer.classList.remove("about-img-dois");
+            aboutContainer.classList.remove("about-img-tres");
+            aboutContainer.classList.remove("about-img-quatro");
+
+            aboutContent.innerHTML = ` <h2>Olá, me chamo Wesley Alves um
+            </h2>
+            <p>Em 2022 ingressei na Fatec Mauá, no curso de Desenvolvimento de Software multiplataforma, onde estou atualmente. Na Fatec desenvolvo diariamente meu conhecimentos em áreas como Git, GitHub, SQL, PHP e POO; Desenvolvo também a comunicação interdisciplinar e interpessoal.</p>`;
+
+           
         break;
         case 'dois':
             select_dois.classList.add("selected");
             select_um.classList.remove("selected");
             select_tres.classList.remove("selected");
             select_quatro.classList.remove("selected");
+
+            aboutContainer.classList.add("about-img-dois");
+            aboutContainer.classList.remove("about-img-um");
+            aboutContainer.classList.remove("about-img-tres");
+            aboutContainer.classList.remove("about-img-quatro");
+
+            aboutContent.innerHTML = ` <h2>Olá, me chamo Wesley Alves dois
+            </h2>
+            <p>Em 2022 ingressei na Fatec Mauá, no curso de Desenvolvimento de Software multiplataforma, onde estou atualmente. Na Fatec desenvolvo diariamente meu conhecimentos em áreas como Git, GitHub, SQL, PHP e POO; Desenvolvo também a comunicação interdisciplinar e interpessoal.</p>`;
+
         break;
         case 'tres':
             select_tres.classList.add("selected");
             select_um.classList.remove("selected");
             select_dois.classList.remove("selected");
             select_quatro.classList.remove("selected");
+
+            aboutContainer.classList.add("about-img-tres");
+            aboutContainer.classList.remove("about-img-um");
+            aboutContainer.classList.remove("about-img-dois");
+            aboutContainer.classList.remove("about-img-quatro");
+
+            aboutContent.innerHTML = ` <h2>Olá, me chamo Wesley Alves tres
+            </h2>
+            <p>Em 2022 ingressei na Fatec Mauá, no curso de Desenvolvimento de Software multiplataforma, onde estou atualmente. Na Fatec desenvolvo diariamente meu conhecimentos em áreas como Git, GitHub, SQL, PHP e POO; Desenvolvo também a comunicação interdisciplinar e interpessoal.</p>`;
         break;
         case 'quatro':
             select_quatro.classList.add("selected");
             select_um.classList.remove("selected");
             select_dois.classList.remove("selected");
             select_tres.classList.remove("selected");
+            
+            aboutContainer.classList.add("about-img-quatro");
+            aboutContainer.classList.remove("about-img-um");
+            aboutContainer.classList.remove("about-img-tres");
+            aboutContainer.classList.remove("about-img-dois");
+
+            aboutContent.innerHTML = ` <h2>Olá, me chamo Wesley Alves quatro
+            </h2>
+            <p>Em 2022 ingressei na Fatec Mauá, no curso de Desenvolvimento de Software multiplataforma, onde estou atualmente. Na Fatec desenvolvo diariamente meu conhecimentos em áreas como Git, GitHub, SQL, PHP e POO; Desenvolvo também a comunicação interdisciplinar e interpessoal.</p>`;
         break;
     }
 

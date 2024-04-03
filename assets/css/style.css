@@ -33,7 +33,7 @@
     background-color: rgb(37, 39, 59);
 }nav{
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     position: sticky;
     top: 0px;
@@ -65,7 +65,7 @@
     font-family: "Raleway", sans-serif;
 }ul a:hover{
     position:relative;
-    top:-6px;
+    top:-4px;
 }#liMenu{
     display: flex;
     justify-content: space-between;
@@ -113,7 +113,7 @@
 
 #rodape{
     display: flex;
-    height: 170px;
+    height: 140px;
     width: 100%;
     background-color: #222;
     justify-content: space-around;
@@ -278,11 +278,11 @@ h2{
 
 
 :root{
-    --gradiente:#333;
+    --gradiente:#222;
   } 
 
   .about-section{
-    height: calc(100vh - 100px) ;
+    height: calc(100vh - 80px) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,19 +291,33 @@ h2{
   .about-container{
     width: 60vw;
     height: 70vh;
-    background-image: url('../../assets/img/foto-perfil.jpg');
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
-    border-radius: 15px;
-    background-color: #333;
-    
+    border-radius: 10px;
+    background-color: #222;   
+  }
+
+  .about-img-um{
+    background-image: url('../../assets/img/foto-perfil.jpg');
+  }
+  .about-img-dois{
+    background-image: url('../../assets/img/Logo.png');
+  }
+  .about-img-tres{
+    background-image: url('../../assets/img/Captura\ de\ tela\ 2024-02-29\ 153045.png');
+  }
+  .about-img-quatro{
+    background-image: url('../../assets/img/whatsapp.png');
+    background-size: 60%;
+    background-position: 20px;
   }
   .about-overlay{
+    border:4px solid #222;
     position: relative;
     display: flex;
     flex-direction: row;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), var(--gradiente), var(--gradiente), var(--gradiente), var(--gradiente));
@@ -329,15 +343,15 @@ h2{
 }
 .about-content p{
   text-align: center;
-  margin: 5px;
-  font-size: 21px;
+  margin: 0px;
+  font-size:1.3em;
   font-weight: 200;
 }
 .about-content h2{
   text-align: center;
-  font-size: 40px;
-  margin: 10px;
-  font-weight: 200;
+  font-size: 2.5em;
+  margin: 0px;
+  font-weight: 400;
 }
 
 .line{
@@ -362,7 +376,7 @@ h2{
   height: 12px;
   background-color: #fff;
   border-radius: 50%;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.66); 
   
 }
 
@@ -385,7 +399,7 @@ h2{
   left: 80%;
 }
 .selected{
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   background-color: #333;
 }
 .before{
